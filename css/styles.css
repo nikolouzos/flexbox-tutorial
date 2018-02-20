@@ -1,0 +1,50 @@
+html, body {
+  font-family: "Open Sans";
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Slab";
+  font-size: 1.5em; }
+
+header h1 {
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  background: black;
+  color: white; }
+
+header span {
+  display: inline-block;
+  padding: 1rem;
+  margin: .2rem 0rem;
+  background: cyan;
+  color: black; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white; }
+  a:hover {
+    padding: .2rem;
+    background-color: cyan;
+    color: black; }
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-top: 2rem; }
+  main article {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    background: darkgrey;
+    color: white;
+    border: 2px solid black;
+    padding: 1rem;
+    line-height: 1.25rem;
+    margin: 1rem 1rem; }

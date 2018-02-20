@@ -1,0 +1,55 @@
+//Variables
+
+$cyan: #44e3ff;
+
+//Basic styling that can be ignored
+html, body {
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Slab";
+    font-size: 1.5em;
+}
+header {
+    h1 {
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        background: black;
+        color: white;
+    }
+    span {
+        display: inline-block;
+        padding: 1rem;
+        margin: .2rem 0rem;
+        background: cyan;
+        color: black;
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    &:hover {
+    padding: .2rem;
+    background-color: cyan;
+    color: black;
+    }
+}
+//Main flexboox code
+main {
+    display: flex; //We set the display: flex; property on the parent of the items we want to be flexible
+    flex-flow: row wrap; //Also the flex-direction and the flex-wrap property are set on the parent using the flex-flow property
+    margin-top: 2rem;
+    article {
+        flex: 1 1 300px; // Using the flex property on the children we can set the flex-grow, flex-shrink and flex-basis properties as well
+        background: darkgrey;
+        color: white;
+        border: 2px solid black;
+        padding: 1rem;
+        line-height: 1.25rem;
+        margin: 1rem 1rem;
+    }
+}
